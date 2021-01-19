@@ -1,7 +1,6 @@
 ---
 marp: true
 theme: default
-class: invert
 pagination: true
 ---
 
