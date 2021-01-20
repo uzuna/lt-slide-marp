@@ -1,0 +1,2 @@
+- [ベイズ推論と機械学習](https://courses.wshito.com/semi2/2019-bayes-AI/)
+  - [チャレンジャー号のインシデントデータ](https://raw.githubusercontent.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/master/Chapter2_MorePyMC/data/challenger_data.csv)
