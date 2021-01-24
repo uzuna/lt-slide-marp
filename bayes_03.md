@@ -75,7 +75,7 @@ $Bin(n, \theta) = {}_nC_k \theta^k(1-\theta)^{n-k}$
 ここに試行データ n 回投げて k 回成功がある。
 この時適切な$\theta$は何か?
 
-最尤推定: $max(L(\theta))$(最頻値)となる$\theta$を選ぶ
+最尤推定: $argmax(L(\theta))$となる$\theta$を選ぶ
 
 最も高いのは期待値$n\theta=\frac{k}{n}$
 
@@ -168,7 +168,7 @@ $p(\theta) = Beta(1,1)$
 $p(\theta) = Beta(50,50)$
 
 なんとしても裏が出てほしいお気持ち
-$p(\theta) = Beta(99,1)$
+$p(\theta) = Beta(1,99)$
 
 ---
 
@@ -211,7 +211,7 @@ $\theta$を推定した後にどう使うのか
 - median
 - mean
 - mode, MAP 推定量(Maximum a posteriori)と呼ばれる
-- percentile
+- percentile: 過大推定、過小推定にペナルティを設ける
 
 ---
 
@@ -240,7 +240,31 @@ MAP 推定後のそれの閾値を使うとか?
 
 ---
 
-温度データ -> 破損の可能性
+O-Ring 破損による事故
+
+低温化すると脆弱になるという性質をロジスティック関数で近似
+
+$y=\frac{1}{1+e^{-(bx+a)}}$
+
+![](img/03_logistic_curve.png)
+
+---
+
+グラフィカルモデリング
+
+データ x の成否とその温度情報を使って
+ロジスティック関数のパラメータ a,b を推定する
+
+![](img/03_challenger_gm.png)
+
+---
+
+PyMC3 を使って MCMC で推測した後のパラメータの分布
+![](img/03_challenger_trace_graph.png)
+
+---
+
+![](img/03_challenger_result.png)
 
 ---
 
