@@ -1,0 +1,5 @@
+Apr 23 21:59:29 tom kernel: xslamStereo[17590]: segfault at 280000001b8 ip 00007f3129bdc410 sp 00007f30f37f59d0 error 4 in libxslam-drivers.so.1.12.0~rc1[7f3129b4e000+ce000]
+dev@tom (lv100-L100BS0AJ0016DBA):~$ sudo journalctl | grep seg
+Apr 12 16:56:03 tom kernel: lovot_touch[4245]: segfault at 7e707acdfdb8 ip 00007f887a890e00 sp 00007fff9b3e0a68 error 4 in libpython3.7m.so.1.0[7f887a784000+2f1000]
+Apr 12 16:57:43 tom kernel: twist_publisher[5275]: segfault at 8 ip 00007fa970484562 sp 00007fa96985bbd8 error 6 in libboost_thread.so.1.62.0[7fa970472000+26000]
+Apr 12 16:58:11 tom kernel: python2[13234]: segfault at 718b00000008 ip 000055c89d0958a0 sp 00007fff48cda998 error 4 in... もっと表示する
